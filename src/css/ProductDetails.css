@@ -1,0 +1,340 @@
+/*
+.product-details {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.product-details img {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  margin-bottom: 20px;
+}
+
+.details h3 {
+  color: green;
+  margin-bottom: 20px;
+}
+
+.details p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.details button {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+} */
+
+/* PRODUCT DETAILS PAGE */
+
+/* PRODUCT DETAILS PAGE */
+
+.product-details-page {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-details {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+
+  padding: 40px;
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* IMAGE */
+
+.product-image {
+  width: 400px;
+  min-width: 400px;
+
+  background-color: #fce4ec;
+
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+.product-image img {
+  width: 300px;
+  height: 350px;
+
+  object-fit: contain;
+}
+
+
+/* DETAILS */
+
+.details {
+  flex: 1;
+}
+
+.details h2 {
+  font-size: 30px;
+  color: #222;
+
+  margin-bottom: 20px;
+}
+
+.details h3 {
+  font-size: 26px;
+  color: #d43f85;
+
+  margin-bottom: 20px;
+}
+
+.details p {
+  line-height: 1.7;
+  color: #555;
+
+  margin-bottom: 18px;
+}
+
+
+/* QUANTITY */
+
+.quantity-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 38px;
+
+  border: none;
+
+  background-color: #fce4ec;
+
+  color: #333;
+
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.quantity-selector button:hover {
+  background-color: #f8bbd0;
+}
+
+.quantity-selector span {
+  width: 45px;
+
+  text-align: center;
+
+  font-size: 17px;
+}
+
+
+/* ADD TO CART */
+
+.add-cart-btn {
+  padding: 13px 35px;
+
+  border: none;
+  border-radius: 6px;
+
+  background-color: #d43f85;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.add-cart-btn:hover {
+  background-color: #c2185b;
+}
+
+
+/* REVIEWS */
+
+.reviews-section {
+  margin-top: 40px;
+
+  padding: 35px;
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.reviews-section > h2 {
+  margin-bottom: 25px;
+
+  color: #222;
+}
+
+
+/* INDIVIDUAL REVIEW */
+
+.review {
+  padding: 20px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.stars {
+  color: #e91e63;
+
+  font-size: 20px;
+
+  margin-bottom: 8px;
+}
+
+.review h3 {
+  margin-bottom: 5px;
+}
+
+.review p {
+  color: #555;
+
+  margin-bottom: 8px;
+}
+
+.review small {
+  color: #888;
+}
+
+
+/* WRITE REVIEW */
+
+.write-review {
+  margin-top: 35px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #ddd;
+}
+
+.write-review h3 {
+  margin-bottom: 20px;
+}
+
+.write-review select,
+.write-review input,
+.write-review textarea {
+  display: block;
+
+  width: 100%;
+
+  max-width: 600px;
+
+  padding: 11px;
+
+  margin-bottom: 15px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  font-size: 15px;
+}
+
+.write-review textarea {
+  height: 100px;
+
+  resize: vertical;
+}
+
+.write-review button {
+  padding: 11px 25px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #d43f85;
+
+  color: white;
+
+  cursor: pointer;
+}
+
+.write-review button:hover {
+  background-color: #c2185b;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .product-details {
+    flex-direction: column;
+
+    padding: 25px;
+
+    gap: 30px;
+  }
+
+  .product-image {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-image img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .details h2 {
+    font-size: 24px;
+  }
+
+  .reviews-section {
+    padding: 25px;
+  }
+  .no-reviews {
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.write-review label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+}

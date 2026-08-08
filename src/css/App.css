@@ -1,0 +1,21 @@
+/*.main-content {
+  min-height: 80vh;
+  padding: 30px;
+} */
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
